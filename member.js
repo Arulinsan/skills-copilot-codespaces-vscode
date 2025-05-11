@@ -1,15 +1,12 @@
 function skillMember() {
-  return {
-    name: "skillMember",
-    description: "Get the skill member",
-    type: 1,
-    options: [
-      {
-        name: "member",
-        description: "The member to get the skill of",
-        type: 6,
-        required: true,
-      },
-    ],
+  return{
+    restrict: 'E',
+    templateUrl: 'app/components/member/member.html',
+    controller:"SkillMemberController",
+    controllerAs: 'vm',
+    bindToController: true,
+    scope: {
+      member: '='
+    },
   };
 }
