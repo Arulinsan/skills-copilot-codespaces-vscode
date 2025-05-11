@@ -1,4 +1,4 @@
-function skillMember() {
+function skillsMember() {
   return{
     restrict: 'E',
     templateUrl: 'app/components/member/member.html',
@@ -7,6 +7,6 @@ function skillMember() {
     bindToController: true,
     scope: {
       member: '='
-    },
+    }
   };
 }
